@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- id  -->
+    <p id="one">Namaste</p>
+
+    <!-- class -->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <!-- tagname  -->
+    <h4>Tag one</h4>
+    <h4>Tag two</h4>
+    <h4>Tag three</h4>
+
+    <!-- query selector  -->
+    <h2>Hello</h2>
+    <h2 class="h2-class">Hola</h2>
+    <h2 id="h2-id">Hey</h2>
+
+    <script>
+        // id 
+        let var1 = document.getElementById("one");
+        console.log(var1);
+        console.log(var1.innerText);
+
+        // class 
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2[2].innerText);
+        var2[2].innerText = "Node Js";
+
+        // tag name 
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3[2].innerText);
+        var3[2].style.color = "red";
+
+        // query seletor 
+        let var4 = document.querySelector(".h2-class");
+        console.log(var4);
+
+        var4.className = "hello"; // changing class name 
+        console.log(var4);
+
+        var4.className = "hello hello-2"; // changing class list
+        console.log(var4);
+
+        var4.setAttribute("id", "js");
+        console.log(var4);
+
+
+
+    </script>
+
+</body>
+
+</html>

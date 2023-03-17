@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello Bachho</h1>
+    
+    <button onclick="hey()" id="button">Submit</button>
+
+    <p id="js"></p>
+
+    <script>
+        document.addEventListener("dblclick",hello);
+
+        function hello(){
+            document.getElementById("button").innerHTML = "Not Submitted";
+            document.getElementById("button").style.color = "red";
+        }
+
+        function hey(){
+            document.getElementById("button").innerHTML = "Submitted";
+            document.getElementById("button").style.color = "green";
+            
+        }
+    </script>
+    
+</body>
+</html>

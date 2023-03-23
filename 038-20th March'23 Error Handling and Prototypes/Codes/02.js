@@ -1,16 +1,16 @@
 class Product {
   // properties and behaviours -> functions -> member functionslity
 
+  name;
+  price;
+  rating;
+
   constructor(n, p, r) {
     this.name = n;
     this.price = p;
     this.rating = r;
     console.log("Calling the constrructor");
   }
-
-  name;
-  price;
-  rating;
 
   display() {
     console.log("displaying the current product");
@@ -21,5 +21,5 @@ class Product {
 const p = new Product("Iphone", "100000", "4.5");
 // class members
 console.log(p);
-// class member method
-p.display();
+// class member function
+console.log(p.display());

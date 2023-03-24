@@ -11,15 +11,15 @@ class ComplexNumber {
     console.log(this.#real, " + i", this.#imag);
   }
 
-  get real(){
+  get real() {
     return this.#real;
   }
 
-  get imag(){
+  get imag() {
     return this.#imag;
   }
 
-  addComplexNumber(){
+  addComplexNumber() {
     this.#real += c1.real;
     this.#imag += c1.imag;
   }

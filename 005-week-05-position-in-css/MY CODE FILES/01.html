@@ -17,6 +17,9 @@
             font-size: xx-large;
             font-weight: bolder;
             margin: 10px;
+            position: relative;
+            height: 300px;
+            overflow: scroll;
         }
 
         .item {
@@ -30,18 +33,19 @@
         }
 
         .item1 {
-            float: right;
-            background-color: aqua;
+            background-color: red;
         }
 
         .item2 {
-            float: left;
-            background-color: blanchedalmond;
+            background-color: green;
+            position: sticky;
+            top: 10px;
+            left: 110px;
+            /* z-index: -999; */
         }
 
         .item3 {
-            clear: both;
-            background-color: blueviolet;
+            background-color: blue;
         }
     </style>
 </head>

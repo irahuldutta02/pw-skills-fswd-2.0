@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* h1 {
+            background-color: #787878;
+        } */
+        .bg-orange{
+            background-color: #9d6704;
+        }
+        #bg-green {
+            background-color: #05a640;
+        }
+        a[target="_blank"]{
+            background-color: #580571;
+            color: aliceblue;
+        }
+
+        h1, h2, h3 {
+            background-color: #410505;
+        }
+        ul li {
+            background-color: #9d6704;
+        }
+        header > a {
+            background-color: #1393b3;
+        }
+        /* img ~ p {
+            background-color: #9d6704;
+        } */
+        img + p {
+            background-color: #049d3c;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2 class="bg-orange">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="bg-green" class="bg-orange" >Lorem ipsum dolor sit amet.</h3>
+
+    <a target="_parent" href="https://pwskills.com">PW SKILLS</a>
+    <a target="_blank" href="https://ineuron.ai">iNeuron</a> -->
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2 >Lorem ipsum dolor sit amet.</h2>
+    <h3 >Lorem ipsum dolor sit amet.</h3>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <li>Four</li>
+
+    <header>
+        <a href="#">Google</a>
+        
+        <nav>
+            <ul>
+                <li>Home</li>
+                <a href="#">Logo</a>
+            </ul>
+        </nav>
+        <a href="#">Bing</a>
+    </header>
+
+    <div>
+        <img src="#" alt="">
+        <p>Change me</p>
+        <p>Change me three</p>
+        <div>
+            <p>Change me too</p>
+        </div>
+    </div>
+
+    <a target="_parent" href="https://pwskills.com">PW SKILLS</a>
+    <a target="_blank" href="https://ineuron.ai">iNeuron</a>
+</body>
+</html>

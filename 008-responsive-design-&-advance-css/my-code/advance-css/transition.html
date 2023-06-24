@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        nav{
+            display: flex;
+            gap: 0.5rem;
+        }
+        a{
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 250ms ease-in;
+        }
+
+        a:hover, a:focus{
+            background-color: #fff;
+            color: #445ed1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Events</a>
+    </nav>
+
+</body>
+
+</html>
